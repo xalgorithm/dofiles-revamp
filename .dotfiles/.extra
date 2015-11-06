@@ -15,5 +15,4 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="x.algorithm@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
-export GDK_SCALE=2
-export PACKAGE_DIRS="$HOME/.meteor/packages"
+

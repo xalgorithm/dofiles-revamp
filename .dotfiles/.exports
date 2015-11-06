@@ -30,3 +30,6 @@ export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
 
 export TZ='America/Los Angeles'
 export ANSIBLE_HOSTS=/Users/xalg/.dotfiles/ansible_hosts
+
+export GDK_SCALE=2
+export PACKAGE_DIRS="$HOME/.meteor/packages"
