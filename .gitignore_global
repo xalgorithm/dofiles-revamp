@@ -1,0 +1,11 @@
+*~
+.DS_Store
+.idea
+logs/
+logs/*
+*.log
+FirePHPCore
+*.sass-cache
+*.sql
+*.tar
+index.php
