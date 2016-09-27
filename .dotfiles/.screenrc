@@ -1,0 +1,17 @@
+# Disable the startup message
+startup_message off
+
+# Set a large scrollback buffer
+defscrollback 32000
+
+# Always start `screen` with UTF-8 enabled (`screen -U`)
+defutf8 on
+
+#Always caption
+caption always "%{= Wk}%-w%{= Bw}%n %t%{-}%+w %-="
+
+#screen -t "server" 1
+#screen -t "logs" 1
+#screen -t "ruby" 3
+#screen -t "coffeescript" 4
+#screen -t top 2 nice top

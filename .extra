@@ -1,0 +1,39 @@
+# Add `~/bin` to the `$PATH`
+#local bins
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+PATH="~/bin:$PATH"; export PATH;
+PATH="~/perl5/bin${PATH+:}${PATH}"; export PATH;
+
+#PERL
+PERL5LIB="~/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="~/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"~/perl5\""; export PERL_MB_OPT;
+#PERL_MM_OPT="INSTALL_BASE=/Users/xalg/perl5"; export PERL_MM_OPT;
+
+#mysql
+export PATH=/usr/local/mysql/bin:$PATH
+#terraform
+export PATH=$HOME/terraform/bin:$PATH
+
+
+NPM_PACKAGES="${HOME}/.npm-packages"
+prefix=${HOME}/.npm-packages
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+PATH="$NPM_PACKAGES/bin:$PATH"
+unset MANPATH
+MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+#for rbenv
+#eval "($rbenv init - )"
+
+# Git credentials
+GIT_AUTHOR_NAME="Vincent Flesouras"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="x.algorithm@gmail.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+HOMEBREW_GITHUB_API_TOKEN="96312bdaf0a211d3008d377e41014700677cc0d9"

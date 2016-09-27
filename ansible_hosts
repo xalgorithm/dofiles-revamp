@@ -1,30 +1,43 @@
-[all]
-jenkins
-
-
-[jenkins]
-jenkins ansible_host=134.79.196.67 ansible_user=centos
-worker1 ansible_host=172.23.67.3 ansible_user=centos
-worker2 ansible_host=172.23.67.30 ansible_user=centos
-
-[solr]
-solr ansible_host=134.79.196.83 ansible_user=centos
-
-[bosun-prod]
-ansible_host=134.79.196.80 ansible_user=centos
-
-[grafana]
-grafana ansible_host=134.79.196.82 ansible_user=centos
-
 [experimental]
 xalg-liquid.slac.stanford.edu
 
+[jenkins]
+134.79.196.67
+
+[jenkins-worker1]
+172.23.67.3 ansible_user=centos
+[jenkins-worker2]
+172.23.67.30  ansible_user=centos
+
+[solr]
+134.79.196.83
+
+[bosun-prod]
+134.79.196.80 ansible_user=centos
+
+[grafana]
+134.79.196.82 ansible_user=centos
+
 [personal]
 www.xalg.im ansible_user=xalg
-fileserver ansible_host=192.168.0.2 ansible_user=xalg
 
-[drupal]
-drupal-prod[01-04].slac.stanford.edu
-drupal-stage[01-02].slac.stanford.edu
-drupal-preprod[01-04].slac.stanford.edu
+[fileserver]
+192.168.0.2 ansible_user=xalg
 
+[drupal-prod]
+drupal-prod[01:04].slac.stanford.edu
+
+[drupal-stage]
+drupal-stage[01:02].slac.stanford.edu
+
+[drupal-preprod]
+drupal-preprod[01:04].slac.stanford.edu
+
+[xalg-web]
+www.xalg.im ansible_user=xalg
+
+[test]
+134.79.196.84 ansible_user=centos
+
+[docker]
+docker.xalg.im
